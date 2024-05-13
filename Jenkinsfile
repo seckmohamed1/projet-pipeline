@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                echo 'https://github.com/seckmohamed1/projet-pipeline.git'
+                sh '$ docker rm $(docker ps -aq)'
             }
         }
         stage('build'){
