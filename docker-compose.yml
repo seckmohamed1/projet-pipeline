@@ -7,7 +7,7 @@ services:
    # Utilise l'image Docker PHP 8.2 avec Apache.
     image: php:8.2-apache
     #Nomme le conteneur PHP comme 'php82'.
-    container_name: php82
+    container_name: phpconteneur
     # Configure les ports du conteneur.Mappe le port 8080 de l'hôte au port 80 du conteneur.
     ports:
       - 80:80
@@ -27,7 +27,7 @@ services:
       # Utilise l'image Docker MySQL 8.0.
       image: mysql:8.0
        # Nomme le conteneur MySQL comme 'mysql8'.
-      container_name: mysql8
+      container_name: mysqlconteneur
       #Elle configure le plugin d'authentification par défaut sur "mysql_native_password". 
       #Ce plugin est utilisé pour l'authentification des utilisateurs lors de la connexion à la base de données MySQL.
       command: --default-authentication-plugin=mysql_native_password
@@ -53,7 +53,7 @@ services:
    # Utilise l'image Docker phpMyAdmin.
       image: phpmyadmin/phpmyadmin
       # Nomme le conteneur phpMyAdmin comme 'phpmyadmin'.
-      container_name: phpmyadmin
+      container_name: phpmyadminconteneur
       # Définit les variables d'environnement pour phpMyAdmin.
       environment:
           #Indique que l'hôte de la base de données peut être spécifié manuellement.
