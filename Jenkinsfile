@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                echo 'https://github.com/seckmohamed1/projet-pipeline.git'
+                git 'https://github.com/seckmohamed1/projet-pipeline.git'
             }
         }
         stage('build'){
             steps{
-                sh 'docker-compose up'
+                sh 'docker-compose up --build --force-recreate'
             }
         }
         
