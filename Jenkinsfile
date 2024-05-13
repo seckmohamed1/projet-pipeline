@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                git 'https://github.com/seckmohamed1/projet-pipeline.git'
+                echo 'https://github.com/seckmohamed1/projet-pipeline.git'
             }
         }
         stage('build'){
