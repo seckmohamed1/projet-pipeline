@@ -31,7 +31,7 @@ services:
       #Elle configure le plugin d'authentification par défaut sur "mysql_native_password". 
       #Ce plugin est utilisé pour l'authentification des utilisateurs lors de la connexion à la base de données MySQL.
       command: --default-authentication-plugin=mysql_native_password
-      volumes:
+      
 # Montre le fichier SQL local au répertoire d'initialisation de la base de données du conteneur.
         
 
